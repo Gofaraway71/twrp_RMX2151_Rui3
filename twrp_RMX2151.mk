@@ -22,13 +22,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from our PitchBlack configuration
-$(call inherit-product, vendor/pb/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := RMX2151
-PRODUCT_NAME := omni_RMX2151
+PRODUCT_NAME := twrp_RMX2151
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme 7
 PRODUCT_MANUFACTURER := realme
